@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Manutenção de produtos</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(62, 132, 238);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="InputNome">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>641</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border-color: rgb(0,0,0);
+</string>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Descrição do produto</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="InputValor">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border-color: rgb(0,0,0);
+</string>
+    </property>
+    <property name="maximum">
+     <double>99999.990000000005239</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Preço do produto:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Codigo do produto</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnAlterar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(78, 154, 6);
+color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Alterar produto</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnDesligar">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>280</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(239, 41, 41);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Desligar produtos</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="InputCodigo">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border-color: rgb(0,0,0);
+</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnSair">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>280</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(245, 121, 0);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Sair</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnReativar">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>350</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+border-radius: 10px;
+background-color: rgb(237, 212, 0);</string>
+    </property>
+    <property name="text">
+     <string>Reativar produto</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>InputNome</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

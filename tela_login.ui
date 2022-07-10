@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>587</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tela de login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(62, 132, 238);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="InputUsuario">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>120</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border-color: rgb(0,0,0);</string>
+    </property>
+    <property name="placeholderText">
+     <string>Usuário:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="InputSenha">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>240</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border-color: rgb(0,0,0);</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Senha:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnEntrar">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>360</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(78, 154, 6);
+color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Entrar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="IconeUsuario">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>100</y>
+      <width>71</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icone_usuario.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="IconeSenha">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>220</y>
+      <width>71</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icone_senha.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>InputUsuario</tabstop>
+  <tabstop>InputSenha</tabstop>
+  <tabstop>BtnEntrar</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
